@@ -22,10 +22,140 @@ Version 4.0 HI-TECH Software Intermediate Code
 "203 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\pic18.h
 [v __delay `JF3152 ~T0 @X0 0 e ]
 [p i __delay ]
-"39 newmain.c
-[; ;newmain.c: 39: char estado_teclado = n1;
-[c E3762 0 1 2 3 4 .. ]
-[n E3762 teclado_estado n1 n2 n3 n4 en  ]
+"10434 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10434: extern volatile __bit RCEN __attribute__((address(0x7E2B)));
+[v _RCEN `Vb ~T0 @X0 0 e@32299 ]
+"6944
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6944:     struct {
+[s S287 :2 `uc 1 :1 `uc 1 ]
+[n S287 . . R_NOT_W ]
+"6948
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6948:     struct {
+[s S288 :5 `uc 1 :1 `uc 1 ]
+[n S288 . . D_NOT_A ]
+"6952
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6952:     struct {
+[s S289 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S289 . BF UA R_nW S P D_nA CKE SMP ]
+"6962
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6962:     struct {
+[s S290 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S290 . . R_W . D_A ]
+"6968
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6968:     struct {
+[s S291 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S291 . . I2C_READ I2C_START I2C_STOP I2C_DAT ]
+"6975
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6975:     struct {
+[s S292 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S292 . . nW . nA ]
+"6981
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6981:     struct {
+[s S293 :2 `uc 1 :1 `uc 1 ]
+[n S293 . . NOT_WRITE ]
+"6985
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6985:     struct {
+[s S294 :5 `uc 1 :1 `uc 1 ]
+[n S294 . . NOT_ADDRESS ]
+"6989
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6989:     struct {
+[s S295 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S295 . . nWRITE . nADDRESS ]
+"6995
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6995:     struct {
+[s S296 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S296 . . READ_WRITE . DATA_ADDRESS ]
+"7001
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7001:     struct {
+[s S297 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S297 . . R . D ]
+"7007
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7007:     struct {
+[s S298 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S298 . . RW START STOP DA ]
+"7014
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7014:     struct {
+[s S299 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S299 . . NOT_W . NOT_A ]
+"6943
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6943: typedef union {
+[u S286 `S287 1 `S288 1 `S289 1 `S290 1 `S291 1 `S292 1 `S293 1 `S294 1 `S295 1 `S296 1 `S297 1 `S298 1 `S299 1 ]
+[n S286 . . . . . . . . . . . . . . ]
+"7021
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7021: extern volatile SSPSTATbits_t SSPSTATbits __attribute__((address(0xFC7)));
+[v _SSPSTATbits `VS286 ~T0 @X0 0 e@4039 ]
+"7193
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7193: extern volatile unsigned char SSPBUF __attribute__((address(0xFC9)));
+[v _SSPBUF `Vuc ~T0 @X0 0 e@4041 ]
+"27 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 27: void I2C_Ack();
+[v _I2C_Ack `(v ~T0 @X0 0 e? ]
+"28
+[; ;./I2C_Master_File.h: 28: void I2C_Nack();
+[v _I2C_Nack `(v ~T0 @X0 0 e? ]
+"19
+[; ;./I2C_Master_File.h: 19: void I2C_Ready();
+[v _I2C_Ready `(v ~T0 @X0 0 e? ]
+"10902 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10902: extern volatile __bit TRISB0 __attribute__((address(0x7C98)));
+[v _TRISB0 `Vb ~T0 @X0 0 e@31896 ]
+"10905
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10905: extern volatile __bit TRISB1 __attribute__((address(0x7C99)));
+[v _TRISB1 `Vb ~T0 @X0 0 e@31897 ]
+"6938
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6938: extern volatile unsigned char SSPSTAT __attribute__((address(0xFC7)));
+[v _SSPSTAT `Vuc ~T0 @X0 0 e@4039 ]
+"6868
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6868: extern volatile unsigned char SSPCON1 __attribute__((address(0xFC6)));
+[v _SSPCON1 `Vuc ~T0 @X0 0 e@4038 ]
+"6806
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6806: extern volatile unsigned char SSPCON2 __attribute__((address(0xFC5)));
+[v _SSPCON2 `Vuc ~T0 @X0 0 e@4037 ]
+"7186
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 7186: extern volatile unsigned char SSPADD __attribute__((address(0xFC8)));
+[v _SSPADD `Vuc ~T0 @X0 0 e@4040 ]
+"10641
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10641: extern volatile __bit SSPIE __attribute__((address(0x7CEB)));
+[v _SSPIE `Vb ~T0 @X0 0 e@31979 ]
+"10644
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10644: extern volatile __bit SSPIF __attribute__((address(0x7CF3)));
+[v _SSPIF `Vb ~T0 @X0 0 e@31987 ]
+"6812
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6812:     struct {
+[s S282 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S282 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"6811
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6811: typedef union {
+[u S281 `S282 1 ]
+[n S281 . . ]
+"6823
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6823: extern volatile SSPCON2bits_t SSPCON2bits __attribute__((address(0xFC5)));
+[v _SSPCON2bits `VS281 ~T0 @X0 0 e@4037 ]
+"26 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 26: char I2C_Write(unsigned char);
+[v _I2C_Write `(uc ~T0 @X0 0 ef1`uc ]
+"8916 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8916: extern volatile __bit ACKSTAT __attribute__((address(0x7E2E)));
+[v _ACKSTAT `Vb ~T0 @X0 0 e@32302 ]
+"25 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 25: char I2C_Stop();
+[v _I2C_Stop `(uc ~T0 @X0 0 e? ]
+"10515 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10515: extern volatile __bit RSEN __attribute__((address(0x7E29)));
+[v _RSEN `Vb ~T0 @X0 0 e@32297 ]
+"10275
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 10275: extern volatile __bit PEN __attribute__((address(0x7E2A)));
+[v _PEN `Vb ~T0 @X0 0 e@32298 ]
+"8910
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8910: extern volatile __bit ACKDT __attribute__((address(0x7E2D)));
+[v _ACKDT `Vb ~T0 @X0 0 e@32301 ]
+"8913
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 8913: extern volatile __bit ACKEN __attribute__((address(0x7E2C)));
+[v _ACKEN `Vb ~T0 @X0 0 e@32300 ]
+"43 main.c
+[; ;main.c: 43: char estado_teclado = n1;
+[c E3781 0 1 2 3 4 .. ]
+[n E3781 teclado_estado n1 n2 n3 n4 en  ]
 "6581 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 6581: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
 [v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
@@ -105,6 +235,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14 C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\ctype.h
 [; ;C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\ctype.h: 14: int isdigit(int);
 [v _isdigit `(i ~T0 @X0 0 ef1`i ]
+"113 C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "3858 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 3858:     struct {
 [s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -200,9 +332,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5426
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 5426: extern volatile unsigned char SPBRG __attribute__((address(0xFAF)));
 [v _SPBRG `Vuc ~T0 @X0 0 e@4015 ]
-"113 C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"5402 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+"5402
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h: 5402: extern volatile unsigned char TXREG __attribute__((address(0xFAD)));
 [v _TXREG `Vuc ~T0 @X0 0 e@4013 ]
 "23 C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\stdlib.h
@@ -1098,14 +1228,415 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./lcd.h: 114: }
 [e :UE 390 ]
 }
-"26 newmain.c
-[; ;newmain.c: 26: unsigned char tecla;
+"31 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 31: char I2C_Read(char flag)
+[v _I2C_Read `(uc ~T0 @X0 1 ef1`uc ]
+"33
+[; ;./I2C_Master_File.h: 33: {
+{
+[e :U _I2C_Read ]
+"31
+[; ;./I2C_Master_File.h: 31: char I2C_Read(char flag)
+[v _flag `uc ~T0 @X0 1 r1 ]
+"33
+[; ;./I2C_Master_File.h: 33: {
+[f ]
+"34
+[; ;./I2C_Master_File.h: 34:         char buffer;
+[v _buffer `uc ~T0 @X0 1 a ]
+"35
+[; ;./I2C_Master_File.h: 35:         RCEN = 1;
+[e = _RCEN -> -> 1 `i `b ]
+"36
+[; ;./I2C_Master_File.h: 36:         while(!SSPSTATbits.BF);
+[e $U 392  ]
+[e :U 393 ]
+[e :U 392 ]
+[e $ ! != -> . . _SSPSTATbits 2 0 `i -> 0 `i 393  ]
+[e :U 394 ]
+"38
+[; ;./I2C_Master_File.h: 38:         buffer = SSPBUF;
+[e = _buffer -> _SSPBUF `uc ]
+"40
+[; ;./I2C_Master_File.h: 40:         if(flag==0)
+[e $ ! == -> _flag `i -> 0 `i 395  ]
+"41
+[; ;./I2C_Master_File.h: 41:             I2C_Ack();
+[e ( _I2C_Ack ..  ]
+[e $U 396  ]
+"42
+[; ;./I2C_Master_File.h: 42:         else
+[e :U 395 ]
+"43
+[; ;./I2C_Master_File.h: 43:             I2C_Nack();
+[e ( _I2C_Nack ..  ]
+[e :U 396 ]
+"44
+[; ;./I2C_Master_File.h: 44:         I2C_Ready();
+[e ( _I2C_Ready ..  ]
+"45
+[; ;./I2C_Master_File.h: 45:         return(buffer);
+[e ) _buffer ]
+[e $UE 391  ]
+"46
+[; ;./I2C_Master_File.h: 46: }
+[e :UE 391 ]
+}
+"48
+[; ;./I2C_Master_File.h: 48: void I2C_Init()
+[v _I2C_Init `(v ~T0 @X0 1 ef ]
+"49
+[; ;./I2C_Master_File.h: 49: {
+{
+[e :U _I2C_Init ]
+[f ]
+"50
+[; ;./I2C_Master_File.h: 50:     TRISB0=1;
+[e = _TRISB0 -> -> 1 `i `b ]
+"51
+[; ;./I2C_Master_File.h: 51:  TRISB1=1;
+[e = _TRISB1 -> -> 1 `i `b ]
+"52
+[; ;./I2C_Master_File.h: 52:  SSPSTAT=80;
+[e = _SSPSTAT -> -> 80 `i `uc ]
+"53
+[; ;./I2C_Master_File.h: 53:     SSPCON1=0x28;
+[e = _SSPCON1 -> -> 40 `i `uc ]
+"55
+[; ;./I2C_Master_File.h: 55:  SSPCON2=0;
+[e = _SSPCON2 -> -> 0 `i `uc ]
+"56
+[; ;./I2C_Master_File.h: 56:     SSPADD=((8000000/(4*100000))-1);
+[e = _SSPADD -> - / -> 8000000 `l * -> -> 4 `i `l -> 100000 `l -> -> 1 `i `l `uc ]
+"57
+[; ;./I2C_Master_File.h: 57:     SSPIE=1;
+[e = _SSPIE -> -> 1 `i `b ]
+"58
+[; ;./I2C_Master_File.h: 58:     SSPIF=0;
+[e = _SSPIF -> -> 0 `i `b ]
+"59
+[; ;./I2C_Master_File.h: 59: }
+[e :UE 397 ]
+}
+"62
+[; ;./I2C_Master_File.h: 62: void I2C_Ready()
+[v _I2C_Ready `(v ~T0 @X0 1 ef ]
+"63
+[; ;./I2C_Master_File.h: 63: {
+{
+[e :U _I2C_Ready ]
+[f ]
+"64
+[; ;./I2C_Master_File.h: 64:     while(!SSPIF);
+[e $U 399  ]
+[e :U 400 ]
+[e :U 399 ]
+[e $ ! _SSPIF 400  ]
+[e :U 401 ]
+"65
+[; ;./I2C_Master_File.h: 65:     SSPIF=0;
+[e = _SSPIF -> -> 0 `i `b ]
+"66
+[; ;./I2C_Master_File.h: 66: }
+[e :UE 398 ]
+}
+"68
+[; ;./I2C_Master_File.h: 68: void I2C_Start_Wait(char slave_write_address)
+[v _I2C_Start_Wait `(v ~T0 @X0 1 ef1`uc ]
+"69
+[; ;./I2C_Master_File.h: 69: {
+{
+[e :U _I2C_Start_Wait ]
+"68
+[; ;./I2C_Master_File.h: 68: void I2C_Start_Wait(char slave_write_address)
+[v _slave_write_address `uc ~T0 @X0 1 r1 ]
+"69
+[; ;./I2C_Master_File.h: 69: {
+[f ]
+"70
+[; ;./I2C_Master_File.h: 70:   while(1)
+[e :U 404 ]
+"71
+[; ;./I2C_Master_File.h: 71:   {
+{
+"72
+[; ;./I2C_Master_File.h: 72:     SSPCON2bits.SEN=1;
+[e = . . _SSPCON2bits 0 0 -> -> 1 `i `uc ]
+"73
+[; ;./I2C_Master_File.h: 73:     while(SSPCON2bits.SEN);
+[e $U 406  ]
+[e :U 407 ]
+[e :U 406 ]
+[e $ != -> . . _SSPCON2bits 0 0 `i -> 0 `i 407  ]
+[e :U 408 ]
+"74
+[; ;./I2C_Master_File.h: 74:     SSPIF=0;
+[e = _SSPIF -> -> 0 `i `b ]
+"75
+[; ;./I2C_Master_File.h: 75:  if(!SSPSTATbits.S)
+[e $ ! ! != -> . . _SSPSTATbits 2 3 `i -> 0 `i 409  ]
+"76
+[; ;./I2C_Master_File.h: 76:         continue;
+[e $U 403  ]
+[e :U 409 ]
+"77
+[; ;./I2C_Master_File.h: 77:     I2C_Write(slave_write_address);
+[e ( _I2C_Write (1 -> _slave_write_address `uc ]
+"78
+[; ;./I2C_Master_File.h: 78:     if(ACKSTAT)
+[e $ ! _ACKSTAT 410  ]
+"79
+[; ;./I2C_Master_File.h: 79:     {
+{
+"80
+[; ;./I2C_Master_File.h: 80:         I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"81
+[; ;./I2C_Master_File.h: 81:         continue;
+[e $U 403  ]
+"82
+[; ;./I2C_Master_File.h: 82:     }
+}
+[e :U 410 ]
+"83
+[; ;./I2C_Master_File.h: 83:     break;
+[e $U 405  ]
+"84
+[; ;./I2C_Master_File.h: 84:   }
+}
+[e :U 403 ]
+[e $U 404  ]
+[e :U 405 ]
+"85
+[; ;./I2C_Master_File.h: 85: }
+[e :UE 402 ]
+}
+"87
+[; ;./I2C_Master_File.h: 87: char I2C_Start(char slave_write_address)
+[v _I2C_Start `(uc ~T0 @X0 1 ef1`uc ]
+"88
+[; ;./I2C_Master_File.h: 88: {
+{
+[e :U _I2C_Start ]
+"87
+[; ;./I2C_Master_File.h: 87: char I2C_Start(char slave_write_address)
+[v _slave_write_address `uc ~T0 @X0 1 r1 ]
+"88
+[; ;./I2C_Master_File.h: 88: {
+[f ]
+"89
+[; ;./I2C_Master_File.h: 89:     SSPCON2bits.SEN=1;
+[e = . . _SSPCON2bits 0 0 -> -> 1 `i `uc ]
+"90
+[; ;./I2C_Master_File.h: 90:     while(SSPCON2bits.SEN);
+[e $U 412  ]
+[e :U 413 ]
+[e :U 412 ]
+[e $ != -> . . _SSPCON2bits 0 0 `i -> 0 `i 413  ]
+[e :U 414 ]
+"91
+[; ;./I2C_Master_File.h: 91:  SSPIF=0;
+[e = _SSPIF -> -> 0 `i `b ]
+"92
+[; ;./I2C_Master_File.h: 92:     if(!SSPSTATbits.S)
+[e $ ! ! != -> . . _SSPSTATbits 2 3 `i -> 0 `i 415  ]
+"93
+[; ;./I2C_Master_File.h: 93:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 411  ]
+[e :U 415 ]
+"94
+[; ;./I2C_Master_File.h: 94:     return (I2C_Write(slave_write_address));
+[e ) ( _I2C_Write (1 -> _slave_write_address `uc ]
+[e $UE 411  ]
+"96
+[; ;./I2C_Master_File.h: 96: }
+[e :UE 411 ]
+}
+"98
+[; ;./I2C_Master_File.h: 98: char I2C_Repeated_Start(char slave_read_address)
+[v _I2C_Repeated_Start `(uc ~T0 @X0 1 ef1`uc ]
+"99
+[; ;./I2C_Master_File.h: 99: {
+{
+[e :U _I2C_Repeated_Start ]
+"98
+[; ;./I2C_Master_File.h: 98: char I2C_Repeated_Start(char slave_read_address)
+[v _slave_read_address `uc ~T0 @X0 1 r1 ]
+"99
+[; ;./I2C_Master_File.h: 99: {
+[f ]
+"100
+[; ;./I2C_Master_File.h: 100:     RSEN = 1;
+[e = _RSEN -> -> 1 `i `b ]
+"101
+[; ;./I2C_Master_File.h: 101:     while(RSEN);
+[e $U 417  ]
+[e :U 418 ]
+[e :U 417 ]
+[e $ _RSEN 418  ]
+[e :U 419 ]
+"102
+[; ;./I2C_Master_File.h: 102:     SSPIF = 0;
+[e = _SSPIF -> -> 0 `i `b ]
+"103
+[; ;./I2C_Master_File.h: 103:  if(!SSPSTATbits.S)
+[e $ ! ! != -> . . _SSPSTATbits 2 3 `i -> 0 `i 420  ]
+"104
+[; ;./I2C_Master_File.h: 104:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 416  ]
+[e :U 420 ]
+"105
+[; ;./I2C_Master_File.h: 105:     I2C_Write(slave_read_address);
+[e ( _I2C_Write (1 -> _slave_read_address `uc ]
+"106
+[; ;./I2C_Master_File.h: 106:     if (ACKSTAT)
+[e $ ! _ACKSTAT 421  ]
+"107
+[; ;./I2C_Master_File.h: 107:      return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 416  ]
+[e $U 422  ]
+"108
+[; ;./I2C_Master_File.h: 108:     else
+[e :U 421 ]
+"109
+[; ;./I2C_Master_File.h: 109:      return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 416  ]
+[e :U 422 ]
+"110
+[; ;./I2C_Master_File.h: 110: }
+[e :UE 416 ]
+}
+"112
+[; ;./I2C_Master_File.h: 112: char I2C_Stop()
+[v _I2C_Stop `(uc ~T0 @X0 1 ef ]
+"113
+[; ;./I2C_Master_File.h: 113: {
+{
+[e :U _I2C_Stop ]
+[f ]
+"114
+[; ;./I2C_Master_File.h: 114:     PEN = 1;
+[e = _PEN -> -> 1 `i `b ]
+"115
+[; ;./I2C_Master_File.h: 115:     while(PEN);
+[e $U 424  ]
+[e :U 425 ]
+[e :U 424 ]
+[e $ _PEN 425  ]
+[e :U 426 ]
+"116
+[; ;./I2C_Master_File.h: 116:     if(!SSPSTATbits.P);
+[e $ ! ! != -> . . _SSPSTATbits 2 4 `i -> 0 `i 427  ]
+[e :U 427 ]
+"117
+[; ;./I2C_Master_File.h: 117:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 423  ]
+"118
+[; ;./I2C_Master_File.h: 118: }
+[e :UE 423 ]
+}
+"120
+[; ;./I2C_Master_File.h: 120: char I2C_Write(unsigned char data)
+[v _I2C_Write `(uc ~T0 @X0 1 ef1`uc ]
+"121
+[; ;./I2C_Master_File.h: 121: {
+{
+[e :U _I2C_Write ]
+"120
+[; ;./I2C_Master_File.h: 120: char I2C_Write(unsigned char data)
+[v _data `uc ~T0 @X0 1 r1 ]
+"121
+[; ;./I2C_Master_File.h: 121: {
+[f ]
+"122
+[; ;./I2C_Master_File.h: 122:       SSPBUF = data;
+[e = _SSPBUF _data ]
+"123
+[; ;./I2C_Master_File.h: 123:       I2C_Ready();
+[e ( _I2C_Ready ..  ]
+"124
+[; ;./I2C_Master_File.h: 124:       if (ACKSTAT)
+[e $ ! _ACKSTAT 429  ]
+"125
+[; ;./I2C_Master_File.h: 125:         return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 428  ]
+[e $U 430  ]
+"126
+[; ;./I2C_Master_File.h: 126:       else
+[e :U 429 ]
+"127
+[; ;./I2C_Master_File.h: 127:         return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 428  ]
+[e :U 430 ]
+"128
+[; ;./I2C_Master_File.h: 128: }
+[e :UE 428 ]
+}
+"130
+[; ;./I2C_Master_File.h: 130: void I2C_Ack()
+[v _I2C_Ack `(v ~T0 @X0 1 ef ]
+"131
+[; ;./I2C_Master_File.h: 131: {
+{
+[e :U _I2C_Ack ]
+[f ]
+"132
+[; ;./I2C_Master_File.h: 132:     ACKDT=0;
+[e = _ACKDT -> -> 0 `i `b ]
+"133
+[; ;./I2C_Master_File.h: 133:  ACKEN=1;
+[e = _ACKEN -> -> 1 `i `b ]
+"134
+[; ;./I2C_Master_File.h: 134:     while(ACKEN);
+[e $U 432  ]
+[e :U 433 ]
+[e :U 432 ]
+[e $ _ACKEN 433  ]
+[e :U 434 ]
+"135
+[; ;./I2C_Master_File.h: 135: }
+[e :UE 431 ]
+}
+"137
+[; ;./I2C_Master_File.h: 137: void I2C_Nack()
+[v _I2C_Nack `(v ~T0 @X0 1 ef ]
+"138
+[; ;./I2C_Master_File.h: 138: {
+{
+[e :U _I2C_Nack ]
+[f ]
+"139
+[; ;./I2C_Master_File.h: 139:     ACKDT=1;
+[e = _ACKDT -> -> 1 `i `b ]
+"140
+[; ;./I2C_Master_File.h: 140:  ACKEN=1;
+[e = _ACKEN -> -> 1 `i `b ]
+"141
+[; ;./I2C_Master_File.h: 141:     while(ACKEN);
+[e $U 436  ]
+[e :U 437 ]
+[e :U 436 ]
+[e $ _ACKEN 437  ]
+[e :U 438 ]
+"142
+[; ;./I2C_Master_File.h: 142: }
+[e :UE 435 ]
+}
+"28 main.c
+[; ;main.c: 28: unsigned char tecla;
 [v _tecla `uc ~T0 @X0 1 e ]
-"27
-[; ;newmain.c: 27: char aux_contrasenia[4];
+"29
+[; ;main.c: 29: char aux_contrasenia[4];
 [v _aux_contrasenia `uc ~T0 @X0 -> 4 `i e ]
-"28
-[; ;newmain.c: 28: char contrasenia[4] = {'2', '0', '2', '0'};
+"30
+[; ;main.c: 30: char contrasenia[4] = {'2', '0', '2', '0'};
 [v _contrasenia `uc ~T0 @X0 -> 4 `i e ]
 [i _contrasenia
 :U ..
@@ -1115,14 +1646,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 48 `ui `uc
 ..
 ]
-"29
-[; ;newmain.c: 29: unsigned int retardo = 100;
+"31
+[; ;main.c: 31: unsigned int retardo = 100;
 [v _retardo `ui ~T0 @X0 1 e ]
 [i _retardo
 -> -> 100 `i `ui
 ]
-"30
-[; ;newmain.c: 30: char buffer_TX[] = "temperatura alta\r";
+"32
+[; ;main.c: 32: char buffer_TX[] = "temperatura alta\r";
 [v _buffer_TX `uc ~T0 @X0 -> 18 `i e ]
 [i _buffer_TX
 :U ..
@@ -1146,8 +1677,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-"31
-[; ;newmain.c: 31: char buffer_TX2[] = "temperatura regular\r";
+"33
+[; ;main.c: 33: char buffer_TX2[] = "temperatura regular\r";
 [v _buffer_TX2 `uc ~T0 @X0 -> 21 `i e ]
 [i _buffer_TX2
 :U ..
@@ -1174,96 +1705,130 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-"32
-[; ;newmain.c: 32: char estado_dia = 'N';
+"34
+[; ;main.c: 34: int sec, min, hour;
+[v _sec `i ~T0 @X0 1 e ]
+[v _min `i ~T0 @X0 1 e ]
+[v _hour `i ~T0 @X0 1 e ]
+"35
+[; ;main.c: 35: char estado_dia = 'N';
 [v _estado_dia `uc ~T0 @X0 1 e ]
 [i _estado_dia
 -> -> 78 `ui `uc
 ]
-"39
-[; ;newmain.c: 39: char estado_teclado = n1;
+"43
+[; ;main.c: 43: char estado_teclado = n1;
 [v _estado_teclado `uc ~T0 @X0 1 e ]
 [i _estado_teclado
--> . `E3762 0 `uc
+-> . `E3781 0 `uc
 ]
-"41
-[; ;newmain.c: 41: int contador = 0;
+"45
+[; ;main.c: 45: int contador = 0;
 [v _contador `i ~T0 @X0 1 e ]
 [i _contador
 -> 0 `i
 ]
-"45
-[; ;newmain.c: 45: short getCad(char canal) {
+"50
+[; ;main.c: 50: short getCad(char canal) {
 [v _getCad `(s ~T0 @X0 1 ef1`uc ]
 {
 [e :U _getCad ]
 [v _canal `uc ~T0 @X0 1 r1 ]
 [f ]
-"46
-[; ;newmain.c: 46:     ADCON1 = 0b00001100;
-[e = _ADCON1 -> -> 12 `i `uc ]
-"47
-[; ;newmain.c: 47:     switch (canal) {
-[e $U 396  ]
-{
-"48
-[; ;newmain.c: 48:         case 0:
-[e :U 397 ]
-"49
-[; ;newmain.c: 49:             ADCON0 = 0b00000010;
-[e = _ADCON0 -> -> 2 `i `uc ]
-"50
-[; ;newmain.c: 50:             break;
-[e $U 395  ]
 "51
-[; ;newmain.c: 51:     }
-}
-[e $U 395  ]
-[e :U 396 ]
-[e [\ -> _canal `i , $ -> 0 `i 397
- 395 ]
-[e :U 395 ]
+[; ;main.c: 51:     ADCON1 = 0b00001100;
+[e = _ADCON1 -> -> 12 `i `uc ]
 "52
-[; ;newmain.c: 52:     ADCON2 = 0b00101001;
-[e = _ADCON2 -> -> 41 `i `uc ]
+[; ;main.c: 52:     switch (canal) {
+[e $U 444  ]
+{
 "53
-[; ;newmain.c: 53:     ADON = 1;
-[e = _ADON -> -> 1 `i `b ]
+[; ;main.c: 53:         case 0:
+[e :U 445 ]
 "54
-[; ;newmain.c: 54:     GO_DONE = 1;
-[e = _GO_DONE -> -> 1 `i `b ]
+[; ;main.c: 54:             ADCON0 = 0b00000010;
+[e = _ADCON0 -> -> 2 `i `uc ]
+"55
+[; ;main.c: 55:             break;
+[e $U 443  ]
 "56
-[; ;newmain.c: 56:     return ADRESH;
-[e ) -> _ADRESH `s ]
-[e $UE 394  ]
-"57
-[; ;newmain.c: 57: }
-[e :UE 394 ]
+[; ;main.c: 56:     }
 }
+[e $U 443  ]
+[e :U 444 ]
+[e [\ -> _canal `i , $ -> 0 `i 445
+ 443 ]
+[e :U 443 ]
+"57
+[; ;main.c: 57:     ADCON2 = 0b00101001;
+[e = _ADCON2 -> -> 41 `i `uc ]
+"58
+[; ;main.c: 58:     ADON = 1;
+[e = _ADON -> -> 1 `i `b ]
 "59
-[; ;newmain.c: 59: void Keypad_Init() {
+[; ;main.c: 59:     GO_DONE = 1;
+[e = _GO_DONE -> -> 1 `i `b ]
+"61
+[; ;main.c: 61:     return ADRESH;
+[e ) -> _ADRESH `s ]
+[e $UE 442  ]
+"62
+[; ;main.c: 62: }
+[e :UE 442 ]
+}
+"64
+[; ;main.c: 64: void RTC_Read_Clock(char read_clock_address) {
+[v _RTC_Read_Clock `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _RTC_Read_Clock ]
+[v _read_clock_address `uc ~T0 @X0 1 r1 ]
+[f ]
+"65
+[; ;main.c: 65:     I2C_Start(0xD0);
+[e ( _I2C_Start (1 -> -> 208 `i `uc ]
+"66
+[; ;main.c: 66:     I2C_Write(read_clock_address);
+[e ( _I2C_Write (1 -> _read_clock_address `uc ]
+"67
+[; ;main.c: 67:     I2C_Repeated_Start(0xD1);
+[e ( _I2C_Repeated_Start (1 -> -> 209 `i `uc ]
+"68
+[; ;main.c: 68:     sec = I2C_Read(0);
+[e = _sec -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
+"69
+[; ;main.c: 69:     min = I2C_Read(0);
+[e = _min -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
+"70
+[; ;main.c: 70:     hour = I2C_Read(1);
+[e = _hour -> ( _I2C_Read (1 -> -> 1 `i `uc `i ]
+"72
+[; ;main.c: 72: }
+[e :UE 446 ]
+}
+"76
+[; ;main.c: 76: void Keypad_Init() {
 [v _Keypad_Init `(v ~T0 @X0 1 ef ]
 {
 [e :U _Keypad_Init ]
 [f ]
-"60
-[; ;newmain.c: 60:     TRISD = 0B00001111;
+"77
+[; ;main.c: 77:     TRISD = 0B00001111;
 [e = _TRISD -> -> 15 `i `uc ]
-"61
-[; ;newmain.c: 61: }
-[e :UE 398 ]
+"78
+[; ;main.c: 78: }
+[e :UE 447 ]
 }
-"63
-[; ;newmain.c: 63: unsigned char Keypad_Key_Press(void) {
+"81
+[; ;main.c: 81: unsigned char Keypad_Key_Press(void) {
 [v _Keypad_Key_Press `(uc ~T0 @X0 1 ef ]
 {
 [e :U _Keypad_Key_Press ]
 [f ]
-[v F3774 `Cuc ~T0 @X0 -> 17 `i s ]
-[i F3774
+[v F3795 `Cuc ~T0 @X0 -> 17 `i s ]
+[i F3795
 :U ..
-"64
-[; ;newmain.c: 64:     const unsigned char keypad_deco[17] = {'7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', 13, '0', '=', '+', 0};
+"82
+[; ;main.c: 82:     const unsigned char keypad_deco[17] = {'7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', 13, '0', '=', '+', 0};
 -> -> 55 `ui `uc
 -> -> 56 `ui `uc
 -> -> 57 `ui `uc
@@ -1284,623 +1849,671 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _keypad_deco `Cuc ~T0 @X0 -> 17 `i a ]
-[e = _keypad_deco F3774 ]
-"65
-[; ;newmain.c: 65:     unsigned int tec = 0, fila;
+[e = _keypad_deco F3795 ]
+"83
+[; ;main.c: 83:     unsigned int tec = 0, fila;
 [v _tec `ui ~T0 @X0 1 a ]
 [e = _tec -> -> 0 `i `ui ]
 [v _fila `ui ~T0 @X0 1 a ]
-"67
-[; ;newmain.c: 67:     for (fila = 0b00000001; fila < 0b00010000; fila <<= 1) {
+"85
+[; ;main.c: 85:     for (fila = 0b00000001; fila < 0b00010000; fila <<= 1) {
 {
 [e = _fila -> -> 1 `i `ui ]
-[e $ < _fila -> -> 16 `i `ui 400  ]
-[e $U 401  ]
-[e :U 400 ]
+[e $ < _fila -> -> 16 `i `ui 449  ]
+[e $U 450  ]
+[e :U 449 ]
 {
-"68
-[; ;newmain.c: 68:         LATD = fila << 4;
+"86
+[; ;main.c: 86:         LATD = fila << 4;
 [e = _LATD -> << _fila -> 4 `i `uc ]
-"69
-[; ;newmain.c: 69:         if (PORTDbits.RD0 == 1) break;
-[e $ ! == -> . . _PORTDbits 0 0 `i -> 1 `i 403  ]
-[e $U 401  ]
-[e :U 403 ]
-"70
-[; ;newmain.c: 70:         tec++;
+"87
+[; ;main.c: 87:         if (PORTDbits.RD0 == 1) break;
+[e $ ! == -> . . _PORTDbits 0 0 `i -> 1 `i 452  ]
+[e $U 450  ]
+[e :U 452 ]
+"88
+[; ;main.c: 88:         tec++;
 [e ++ _tec -> -> 1 `i `ui ]
-"71
-[; ;newmain.c: 71:         if (PORTDbits.RD1 == 1) break;
-[e $ ! == -> . . _PORTDbits 0 1 `i -> 1 `i 404  ]
-[e $U 401  ]
-[e :U 404 ]
-"72
-[; ;newmain.c: 72:         tec++;
+"89
+[; ;main.c: 89:         if (PORTDbits.RD1 == 1) break;
+[e $ ! == -> . . _PORTDbits 0 1 `i -> 1 `i 453  ]
+[e $U 450  ]
+[e :U 453 ]
+"90
+[; ;main.c: 90:         tec++;
 [e ++ _tec -> -> 1 `i `ui ]
-"73
-[; ;newmain.c: 73:         if (PORTDbits.RD2 == 1) break;
-[e $ ! == -> . . _PORTDbits 0 2 `i -> 1 `i 405  ]
-[e $U 401  ]
-[e :U 405 ]
-"74
-[; ;newmain.c: 74:         tec++;
+"91
+[; ;main.c: 91:         if (PORTDbits.RD2 == 1) break;
+[e $ ! == -> . . _PORTDbits 0 2 `i -> 1 `i 454  ]
+[e $U 450  ]
+[e :U 454 ]
+"92
+[; ;main.c: 92:         tec++;
 [e ++ _tec -> -> 1 `i `ui ]
-"75
-[; ;newmain.c: 75:         if (PORTDbits.RD3 == 1) break;
-[e $ ! == -> . . _PORTDbits 0 3 `i -> 1 `i 406  ]
-[e $U 401  ]
-[e :U 406 ]
-"76
-[; ;newmain.c: 76:         tec++;
+"93
+[; ;main.c: 93:         if (PORTDbits.RD3 == 1) break;
+[e $ ! == -> . . _PORTDbits 0 3 `i -> 1 `i 455  ]
+[e $U 450  ]
+[e :U 455 ]
+"94
+[; ;main.c: 94:         tec++;
 [e ++ _tec -> -> 1 `i `ui ]
-"77
-[; ;newmain.c: 77:     }
+"95
+[; ;main.c: 95:     }
 }
 [e =<< _fila -> -> 1 `i `ui ]
-[e $ < _fila -> -> 16 `i `ui 400  ]
-[e :U 401 ]
+[e $ < _fila -> -> 16 `i `ui 449  ]
+[e :U 450 ]
 }
-"78
-[; ;newmain.c: 78:     PORTD = 0x00;
+"96
+[; ;main.c: 96:     PORTD = 0x00;
 [e = _PORTD -> -> 0 `i `uc ]
-"79
-[; ;newmain.c: 79:     return keypad_deco[tec];
+"97
+[; ;main.c: 97:     return keypad_deco[tec];
 [e ) *U + &U _keypad_deco * -> _tec `ux -> -> # *U &U _keypad_deco `ui `ux ]
-[e $UE 399  ]
-"80
-[; ;newmain.c: 80: }
-[e :UE 399 ]
+[e $UE 448  ]
+"98
+[; ;main.c: 98: }
+[e :UE 448 ]
 }
-"82
-[; ;newmain.c: 82: void activar_seguridad() {
+"101
+[; ;main.c: 101: void activar_seguridad() {
 [v _activar_seguridad `(v ~T0 @X0 1 ef ]
 {
 [e :U _activar_seguridad ]
 [f ]
-"83
-[; ;newmain.c: 83:     tecla = Keypad_Key_Press();
+"102
+[; ;main.c: 102:     tecla = Keypad_Key_Press();
 [e = _tecla ( _Keypad_Key_Press ..  ]
-"85
-[; ;newmain.c: 85:     TRISA = 0b00000001;
-[e = _TRISA -> -> 1 `i `uc ]
-"87
-[; ;newmain.c: 87:     PORTAbits.RA3 = 0;
-[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
-"88
-[; ;newmain.c: 88:     PORTAbits.RA5 = 0;
-[e = . . _PORTAbits 0 5 -> -> 0 `i `uc ]
-"89
-[; ;newmain.c: 89:     PORTAbits.RA4 = 1;
-[e = . . _PORTAbits 0 4 -> -> 1 `i `uc ]
-"90
-[; ;newmain.c: 90:     switch (estado_teclado) {
-[e $U 409  ]
-{
-"91
-[; ;newmain.c: 91:         case n1:
-[e :U 410 ]
-"92
-[; ;newmain.c: 92:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10))) {
-[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 411  ]
-{
-"93
-[; ;newmain.c: 93:                 aux_contrasenia[0] = tecla;
-[e = *U + &U _aux_contrasenia * -> -> -> 0 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
-"94
-[; ;newmain.c: 94:                 estado_teclado = n2;
-[e = _estado_teclado -> . `E3762 1 `uc ]
-"95
-[; ;newmain.c: 95:                 Lcd_Set_Cursor(2, 1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"96
-[; ;newmain.c: 96:                 Lcd_Write_String("                    ");
-[e ( _Lcd_Write_String (1 :s 1C ]
-"97
-[; ;newmain.c: 97:                 Lcd_Set_Cursor(2, 8);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 8 `i `uc ]
-"98
-[; ;newmain.c: 98:                 Lcd_Write_Char('*');
-[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
-"99
-[; ;newmain.c: 99:                 _delay((unsigned long)((400)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"100
-[; ;newmain.c: 100:             }
-}
-[e :U 411 ]
-"101
-[; ;newmain.c: 101:             break;
-[e $U 408  ]
-"103
-[; ;newmain.c: 103:         case n2:
-[e :U 412 ]
 "104
-[; ;newmain.c: 104:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10)))
-[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 413  ]
-"105
-[; ;newmain.c: 105:             {
-{
-"106
-[; ;newmain.c: 106:                 aux_contrasenia[1] = tecla;
-[e = *U + &U _aux_contrasenia * -> -> -> 1 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
-"107
-[; ;newmain.c: 107:                 estado_teclado = n3;
-[e = _estado_teclado -> . `E3762 2 `uc ]
-"108
-[; ;newmain.c: 108:                 Lcd_Set_Cursor(2, 9);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 9 `i `uc ]
-"109
-[; ;newmain.c: 109:                 Lcd_Write_Char('*');
-[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
-"110
-[; ;newmain.c: 110:                 _delay((unsigned long)((400)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"111
-[; ;newmain.c: 111:             }
-}
-[e :U 413 ]
-"112
-[; ;newmain.c: 112:             break;
-[e $U 408  ]
-"114
-[; ;newmain.c: 114:         case n3:
-[e :U 414 ]
-"116
-[; ;newmain.c: 116:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10))) {
-[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 415  ]
-{
-"117
-[; ;newmain.c: 117:                 aux_contrasenia[2] = tecla;
-[e = *U + &U _aux_contrasenia * -> -> -> 2 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
-"118
-[; ;newmain.c: 118:                 estado_teclado = n4;
-[e = _estado_teclado -> . `E3762 3 `uc ]
-"119
-[; ;newmain.c: 119:                 Lcd_Set_Cursor(2, 10);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 10 `i `uc ]
-"120
-[; ;newmain.c: 120:                 Lcd_Write_Char('*');
-[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
-"121
-[; ;newmain.c: 121:                 _delay((unsigned long)((400)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"122
-[; ;newmain.c: 122:             }
-}
-[e :U 415 ]
-"123
-[; ;newmain.c: 123:             break;
-[e $U 408  ]
-"125
-[; ;newmain.c: 125:         case n4:
-[e :U 416 ]
-"126
-[; ;newmain.c: 126:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10))) {
-[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 417  ]
-{
-"127
-[; ;newmain.c: 127:                 aux_contrasenia[3] = tecla;
-[e = *U + &U _aux_contrasenia * -> -> -> 3 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
-"128
-[; ;newmain.c: 128:                 estado_teclado = en;
-[e = _estado_teclado -> . `E3762 4 `uc ]
-"129
-[; ;newmain.c: 129:                 Lcd_Set_Cursor(2, 11);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 11 `i `uc ]
-"130
-[; ;newmain.c: 130:                 Lcd_Write_Char('*');
-[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
-"131
-[; ;newmain.c: 131:                 _delay((unsigned long)((400)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"132
-[; ;newmain.c: 132:             }
-}
-[e :U 417 ]
-"133
-[; ;newmain.c: 133:             break;
-[e $U 408  ]
-"135
-[; ;newmain.c: 135:         case en:
-[e :U 418 ]
-"137
-[; ;newmain.c: 137:             if ((tecla != 0) && (tecla != '='))
-[e $ ! && != -> _tecla `i -> 0 `i != -> _tecla `ui -> 61 `ui 419  ]
-"138
-[; ;newmain.c: 138:             {
-{
-"139
-[; ;newmain.c: 139:                 estado_teclado = n1;
-[e = _estado_teclado -> . `E3762 0 `uc ]
-"140
-[; ;newmain.c: 140:                 Lcd_Set_Cursor(2, 8);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 8 `i `uc ]
-"141
-[; ;newmain.c: 141:                 Lcd_Write_String("      ");
-[e ( _Lcd_Write_String (1 :s 2C ]
-"142
-[; ;newmain.c: 142:                 _delay((unsigned long)((600)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"143
-[; ;newmain.c: 143:             }
-}
-[e $U 420  ]
-"144
-[; ;newmain.c: 144:             else if ((tecla != 0) && (tecla == '='))
-[e :U 419 ]
-[e $ ! && != -> _tecla `i -> 0 `i == -> _tecla `ui -> 61 `ui 421  ]
-"145
-[; ;newmain.c: 145:             {
-{
-"147
-[; ;newmain.c: 147:                 for (int i = 0; i <= 3; i++) {
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ <= _i -> 3 `i 422  ]
-[e $U 423  ]
-[e :U 422 ]
-{
-"149
-[; ;newmain.c: 149:                     if (contrasenia[i] == aux_contrasenia[i]) {
-[e $ ! == -> *U + &U _contrasenia * -> -> _i `ui `ux -> -> # *U &U _contrasenia `ui `ux `i -> *U + &U _aux_contrasenia * -> -> _i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux `i 425  ]
-{
-"151
-[; ;newmain.c: 151:                         contador++;
-[e ++ _contador -> 1 `i ]
-"152
-[; ;newmain.c: 152:                     }
-}
-[e :U 425 ]
-"153
-[; ;newmain.c: 153:                 }
-}
-[e ++ _i -> 1 `i ]
-[e $ <= _i -> 3 `i 422  ]
-[e :U 423 ]
-}
-"155
-[; ;newmain.c: 155:                 if (contador == 4) {
-[e $ ! == _contador -> 4 `i 426  ]
-{
-"156
-[; ;newmain.c: 156:                     Lcd_Set_Cursor(2, 1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
-"157
-[; ;newmain.c: 157:                     Lcd_Write_String("contraseña correcta");
-[e ( _Lcd_Write_String (1 :s 3C ]
-"158
-[; ;newmain.c: 158:                     _delay((unsigned long)((600)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"160
-[; ;newmain.c: 160:                     PORTBbits.RB4 = 0;
-[e = . . _PORTBbits 0 4 -> -> 0 `i `uc ]
-"161
-[; ;newmain.c: 161:                     PORTBbits.RB5 = 0;
-[e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
-"162
-[; ;newmain.c: 162:                     PORTBbits.RB6 = 0;
-[e = . . _PORTBbits 0 6 -> -> 0 `i `uc ]
-"163
-[; ;newmain.c: 163:                     PORTBbits.RB7 = 0;
-[e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
-"165
-[; ;newmain.c: 165:                     ADCON1 = 0b00001111;
-[e = _ADCON1 -> -> 15 `i `uc ]
-"167
-[; ;newmain.c: 167:                     float temperatura;
-[v _temperatura `f ~T0 @X0 1 a ]
-"168
-[; ;newmain.c: 168:                     char Temperatura[10];
-[v _Temperatura `uc ~T0 @X0 -> 10 `i a ]
-"169
-[; ;newmain.c: 169:                     Lcd_Clear();
-[e ( _Lcd_Clear ..  ]
-"170
-[; ;newmain.c: 170:                     TRISA = 0b00000001;
+[; ;main.c: 104:     TRISA = 0b00000001;
 [e = _TRISA -> -> 1 `i `uc ]
-"171
-[; ;newmain.c: 171:                     Lcd_Set_Cursor(1, 6);
-[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 6 `i `uc ]
-"172
-[; ;newmain.c: 172:                     Lcd_Write_String("TEMPERATURA");
-[e ( _Lcd_Write_String (1 :s 4C ]
-"173
-[; ;newmain.c: 173:                     PORTAbits.RA5 = 1;
-[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
-"174
-[; ;newmain.c: 174:                     PORTAbits.RA4 = 0;
-[e = . . _PORTAbits 0 4 -> -> 0 `i `uc ]
-"176
-[; ;newmain.c: 176:                     TRISCbits.RC6 = 0;
-[e = . . _TRISCbits 1 4 -> -> 0 `i `uc ]
-"177
-[; ;newmain.c: 177:                     TXSTAbits.TX9 = 0;
-[e = . . _TXSTAbits 0 6 -> -> 0 `i `uc ]
-"178
-[; ;newmain.c: 178:                     TXSTAbits.TXEN = 1;
-[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
-"179
-[; ;newmain.c: 179:                     TXSTAbits.SYNC = 0;
-[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
-"180
-[; ;newmain.c: 180:                     TXSTAbits.BRGH = 0;
-[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
-"181
-[; ;newmain.c: 181:                     BAUDCONbits.BRG16 = 0;
-[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
-"182
-[; ;newmain.c: 182:                     RCSTAbits.SPEN = 1;
-[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-"183
-[; ;newmain.c: 183:                     SPBRG = (unsigned char) (((8000000 / 9600) / 64) - 1);
-[e = _SPBRG -> - / / -> 8000000 `l -> -> 9600 `i `l -> -> 64 `i `l -> -> 1 `i `l `uc ]
-"185
-[; ;newmain.c: 185:                     while (contador == 4) {
-[e $U 427  ]
-[e :U 428 ]
-{
-"186
-[; ;newmain.c: 186:                         temperatura = (getCad(0)*0.02 * 100);
-[e = _temperatura -> * * -> -> ( _getCad (1 -> -> 0 `i `uc `i `d .0.02 -> -> 100 `i `d `f ]
-"187
-[; ;newmain.c: 187:                         sprintf(Temperatura, "%d%cC", (int) temperatura);
-[e ( _sprintf (1 , (. , &U _Temperatura :s 5C -> _temperatura `i ]
-"188
-[; ;newmain.c: 188:                         Lcd_Set_Cursor(2, 6);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 6 `i `uc ]
-"189
-[; ;newmain.c: 189:                         Lcd_Write_String(Temperatura);
-[e ( _Lcd_Write_String (1 &U _Temperatura ]
-"191
-[; ;newmain.c: 191:                         if (temperatura > 30) {
-[e $ ! > _temperatura -> -> 30 `i `f 430  ]
-{
-"193
-[; ;newmain.c: 193:                             if (estado_dia == 'D') {
-[e $ ! == -> _estado_dia `ui -> 68 `ui 431  ]
-{
-"194
-[; ;newmain.c: 194:                                 PORTAbits.RA2 = 0;
-[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
-"195
-[; ;newmain.c: 195:                             } else if (estado_dia = 'N') {
-}
-[e $U 432  ]
-[e :U 431 ]
-[e $ ! != -> = _estado_dia -> -> 78 `ui `uc `i -> 0 `i 433  ]
-{
-"196
-[; ;newmain.c: 196:                                 PORTAbits.RA2 = 1;
-[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
-"197
-[; ;newmain.c: 197:                             }
-}
-[e :U 433 ]
-[e :U 432 ]
-"199
-[; ;newmain.c: 199:                             for (int i = 0; i < 18; i++) {
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < _i -> 18 `i 434  ]
-[e $U 435  ]
-[e :U 434 ]
-{
-"201
-[; ;newmain.c: 201:                                 while (!TXSTAbits.TRMT) {
-[e $U 437  ]
-[e :U 438 ]
-{
-"202
-[; ;newmain.c: 202:                                 }
-}
-[e :U 437 ]
-"201
-[; ;newmain.c: 201:                                 while (!TXSTAbits.TRMT) {
-[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 438  ]
-[e :U 439 ]
-"204
-[; ;newmain.c: 204:                                 TXREG = buffer_TX[i];
-[e = _TXREG -> *U + &U _buffer_TX * -> -> _i `ui `ux -> -> # *U &U _buffer_TX `ui `ux `uc ]
-"205
-[; ;newmain.c: 205:                             }
-}
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 18 `i 434  ]
-[e :U 435 ]
-}
-"206
-[; ;newmain.c: 206:                             PORTAbits.RA3 = 1;
-[e = . . _PORTAbits 0 3 -> -> 1 `i `uc ]
-"207
-[; ;newmain.c: 207:                         } else {
-}
-[e $U 440  ]
-[e :U 430 ]
-{
-"209
-[; ;newmain.c: 209:                             for (int i = 0; i < 21; i++) {
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ < _i -> 21 `i 441  ]
-[e $U 442  ]
-[e :U 441 ]
-{
-"211
-[; ;newmain.c: 211:                                 while (!TXSTAbits.TRMT) {
-[e $U 444  ]
-[e :U 445 ]
-{
-"212
-[; ;newmain.c: 212:                                 }
-}
-[e :U 444 ]
-"211
-[; ;newmain.c: 211:                                 while (!TXSTAbits.TRMT) {
-[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 445  ]
-[e :U 446 ]
-"214
-[; ;newmain.c: 214:                                 TXREG = buffer_TX2[i];
-[e = _TXREG -> *U + &U _buffer_TX2 * -> -> _i `ui `ux -> -> # *U &U _buffer_TX2 `ui `ux `uc ]
-"215
-[; ;newmain.c: 215:                             }
-}
-[e ++ _i -> 1 `i ]
-[e $ < _i -> 21 `i 441  ]
-[e :U 442 ]
-}
-"216
-[; ;newmain.c: 216:                             PORTAbits.RA3 = 0;
+"106
+[; ;main.c: 106:     PORTAbits.RA3 = 0;
 [e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
+"107
+[; ;main.c: 107:     PORTAbits.RA5 = 0;
+[e = . . _PORTAbits 0 5 -> -> 0 `i `uc ]
+"108
+[; ;main.c: 108:     PORTAbits.RA4 = 1;
+[e = . . _PORTAbits 0 4 -> -> 1 `i `uc ]
+"109
+[; ;main.c: 109:     switch (estado_teclado) {
+[e $U 458  ]
+{
+"110
+[; ;main.c: 110:         case n1:
+[e :U 459 ]
+"111
+[; ;main.c: 111:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10))) {
+[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 460  ]
+{
+"112
+[; ;main.c: 112:                 aux_contrasenia[0] = tecla;
+[e = *U + &U _aux_contrasenia * -> -> -> 0 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
+"113
+[; ;main.c: 113:                 estado_teclado = n2;
+[e = _estado_teclado -> . `E3781 1 `uc ]
+"114
+[; ;main.c: 114:                 Lcd_Set_Cursor(2, 1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"115
+[; ;main.c: 115:                 Lcd_Write_String("                    ");
+[e ( _Lcd_Write_String (1 :s 1C ]
+"116
+[; ;main.c: 116:                 Lcd_Set_Cursor(2, 8);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 8 `i `uc ]
+"117
+[; ;main.c: 117:                 Lcd_Write_Char('*');
+[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
+"118
+[; ;main.c: 118:                 _delay((unsigned long)((400)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"119
+[; ;main.c: 119:             }
+}
+[e :U 460 ]
+"120
+[; ;main.c: 120:             break;
+[e $U 457  ]
+"122
+[; ;main.c: 122:         case n2:
+[e :U 461 ]
+"123
+[; ;main.c: 123:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10)))
+[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 462  ]
+"124
+[; ;main.c: 124:             {
+{
+"125
+[; ;main.c: 125:                 aux_contrasenia[1] = tecla;
+[e = *U + &U _aux_contrasenia * -> -> -> 1 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
+"126
+[; ;main.c: 126:                 estado_teclado = n3;
+[e = _estado_teclado -> . `E3781 2 `uc ]
+"127
+[; ;main.c: 127:                 Lcd_Set_Cursor(2, 9);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 9 `i `uc ]
+"128
+[; ;main.c: 128:                 Lcd_Write_Char('*');
+[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
+"129
+[; ;main.c: 129:                 _delay((unsigned long)((400)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"130
+[; ;main.c: 130:             }
+}
+[e :U 462 ]
+"131
+[; ;main.c: 131:             break;
+[e $U 457  ]
+"133
+[; ;main.c: 133:         case n3:
+[e :U 463 ]
+"135
+[; ;main.c: 135:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10))) {
+[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 464  ]
+{
+"136
+[; ;main.c: 136:                 aux_contrasenia[2] = tecla;
+[e = *U + &U _aux_contrasenia * -> -> -> 2 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
+"137
+[; ;main.c: 137:                 estado_teclado = n4;
+[e = _estado_teclado -> . `E3781 3 `uc ]
+"138
+[; ;main.c: 138:                 Lcd_Set_Cursor(2, 10);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 10 `i `uc ]
+"139
+[; ;main.c: 139:                 Lcd_Write_Char('*');
+[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
+"140
+[; ;main.c: 140:                 _delay((unsigned long)((400)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"141
+[; ;main.c: 141:             }
+}
+[e :U 464 ]
+"142
+[; ;main.c: 142:             break;
+[e $U 457  ]
+"144
+[; ;main.c: 144:         case n4:
+[e :U 465 ]
+"145
+[; ;main.c: 145:             if ((tecla != 0) && ((0 ? isdigit(tecla) : ((unsigned)(tecla)-'0') < 10))) {
+[e $ ! && != -> _tecla `i -> 0 `i != ? != -> 0 `i -> 0 `i : ( _isdigit (1 -> _tecla `i -> < - -> _tecla `ui -> 48 `ui -> -> 10 `i `ui `i -> 0 `i 466  ]
+{
+"146
+[; ;main.c: 146:                 aux_contrasenia[3] = tecla;
+[e = *U + &U _aux_contrasenia * -> -> -> 3 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> _tecla `uc ]
+"147
+[; ;main.c: 147:                 estado_teclado = en;
+[e = _estado_teclado -> . `E3781 4 `uc ]
+"148
+[; ;main.c: 148:                 Lcd_Set_Cursor(2, 11);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 11 `i `uc ]
+"149
+[; ;main.c: 149:                 Lcd_Write_Char('*');
+[e ( _Lcd_Write_Char (1 -> -> 42 `ui `uc ]
+"150
+[; ;main.c: 150:                 _delay((unsigned long)((400)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"151
+[; ;main.c: 151:             }
+}
+[e :U 466 ]
+"152
+[; ;main.c: 152:             break;
+[e $U 457  ]
+"154
+[; ;main.c: 154:         case en:
+[e :U 467 ]
+"156
+[; ;main.c: 156:             if ((tecla != 0) && (tecla != '='))
+[e $ ! && != -> _tecla `i -> 0 `i != -> _tecla `ui -> 61 `ui 468  ]
+"157
+[; ;main.c: 157:             {
+{
+"158
+[; ;main.c: 158:                 estado_teclado = n1;
+[e = _estado_teclado -> . `E3781 0 `uc ]
+"159
+[; ;main.c: 159:                 Lcd_Set_Cursor(2, 8);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 8 `i `uc ]
+"160
+[; ;main.c: 160:                 Lcd_Write_String("      ");
+[e ( _Lcd_Write_String (1 :s 2C ]
+"161
+[; ;main.c: 161:                 _delay((unsigned long)((600)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"162
+[; ;main.c: 162:             }
+}
+[e $U 469  ]
+"163
+[; ;main.c: 163:             else if ((tecla != 0) && (tecla == '='))
+[e :U 468 ]
+[e $ ! && != -> _tecla `i -> 0 `i == -> _tecla `ui -> 61 `ui 470  ]
+"164
+[; ;main.c: 164:             {
+{
+"166
+[; ;main.c: 166:                 for (int i = 0; i <= 3; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ <= _i -> 3 `i 471  ]
+[e $U 472  ]
+[e :U 471 ]
+{
+"168
+[; ;main.c: 168:                     if (contrasenia[i] == aux_contrasenia[i]) {
+[e $ ! == -> *U + &U _contrasenia * -> -> _i `ui `ux -> -> # *U &U _contrasenia `ui `ux `i -> *U + &U _aux_contrasenia * -> -> _i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux `i 474  ]
+{
+"170
+[; ;main.c: 170:                         contador++;
+[e ++ _contador -> 1 `i ]
+"171
+[; ;main.c: 171:                     }
+}
+[e :U 474 ]
+"172
+[; ;main.c: 172:                 }
+}
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 3 `i 471  ]
+[e :U 472 ]
+}
+"174
+[; ;main.c: 174:                 if (contador == 4) {
+[e $ ! == _contador -> 4 `i 475  ]
+{
+"175
+[; ;main.c: 175:                     Lcd_Set_Cursor(2, 1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"176
+[; ;main.c: 176:                     Lcd_Write_String("contraseña correcta");
+[e ( _Lcd_Write_String (1 :s 3C ]
+"177
+[; ;main.c: 177:                     _delay((unsigned long)((600)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"179
+[; ;main.c: 179:                     PORTBbits.RB4 = 0;
+[e = . . _PORTBbits 0 4 -> -> 0 `i `uc ]
+"180
+[; ;main.c: 180:                     PORTBbits.RB5 = 0;
+[e = . . _PORTBbits 0 5 -> -> 0 `i `uc ]
+"181
+[; ;main.c: 181:                     PORTBbits.RB6 = 0;
+[e = . . _PORTBbits 0 6 -> -> 0 `i `uc ]
+"182
+[; ;main.c: 182:                     PORTBbits.RB7 = 0;
+[e = . . _PORTBbits 0 7 -> -> 0 `i `uc ]
+"184
+[; ;main.c: 184:                     ADCON1 = 0b00001111;
+[e = _ADCON1 -> -> 15 `i `uc ]
+"186
+[; ;main.c: 186:                     float temperatura;
+[v _temperatura `f ~T0 @X0 1 a ]
+"187
+[; ;main.c: 187:                     char Temperatura[10];
+[v _Temperatura `uc ~T0 @X0 -> 10 `i a ]
+"188
+[; ;main.c: 188:                     Lcd_Clear();
+[e ( _Lcd_Clear ..  ]
+"189
+[; ;main.c: 189:                     TRISA = 0b00000001;
+[e = _TRISA -> -> 1 `i `uc ]
+"190
+[; ;main.c: 190:                     Lcd_Set_Cursor(1, 3);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 3 `i `uc ]
+"191
+[; ;main.c: 191:                     Lcd_Write_String("Temperatura:");
+[e ( _Lcd_Write_String (1 :s 4C ]
+"192
+[; ;main.c: 192:                     char secs[10], mins[10], hours[10];
+[v _secs `uc ~T0 @X0 -> 10 `i a ]
+[v _mins `uc ~T0 @X0 -> 10 `i a ]
+[v _hours `uc ~T0 @X0 -> 10 `i a ]
+"193
+[; ;main.c: 193:                     I2C_Init();
+[e ( _I2C_Init ..  ]
+"194
+[; ;main.c: 194:                     _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"195
+[; ;main.c: 195:                     RTC_Read_Clock(0);
+[e ( _RTC_Read_Clock (1 -> -> 0 `i `uc ]
+"196
+[; ;main.c: 196:                     I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"197
+[; ;main.c: 197:                     _delay((unsigned long)((1000)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"199
+[; ;main.c: 199:                     sprintf(secs, "%x ", sec);
+[e ( _sprintf (1 , (. , &U _secs :s 5C _sec ]
+"200
+[; ;main.c: 200:                     sprintf(mins, "%x:", min);
+[e ( _sprintf (1 , (. , &U _mins :s 6C _min ]
+"201
+[; ;main.c: 201:                     sprintf(hours, "Hora:%x:", hour);
+[e ( _sprintf (1 , (. , &U _hours :s 7C _hour ]
+"202
+[; ;main.c: 202:                     Lcd_Set_Cursor(2, 3);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 3 `i `uc ]
+"203
+[; ;main.c: 203:                     Lcd_Write_String(hours);
+[e ( _Lcd_Write_String (1 &U _hours ]
+"204
+[; ;main.c: 204:                     Lcd_Set_Cursor(2, 11);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 11 `i `uc ]
+"205
+[; ;main.c: 205:                     Lcd_Write_String(mins);
+[e ( _Lcd_Write_String (1 &U _mins ]
+"206
+[; ;main.c: 206:                     Lcd_Set_Cursor(2, 14);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 14 `i `uc ]
+"207
+[; ;main.c: 207:                     Lcd_Write_String(secs);
+[e ( _Lcd_Write_String (1 &U _secs ]
+"208
+[; ;main.c: 208:                     PORTAbits.RA5 = 1;
+[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
+"209
+[; ;main.c: 209:                     PORTAbits.RA4 = 0;
+[e = . . _PORTAbits 0 4 -> -> 0 `i `uc ]
+"211
+[; ;main.c: 211:                     TRISCbits.RC6 = 0;
+[e = . . _TRISCbits 1 4 -> -> 0 `i `uc ]
+"212
+[; ;main.c: 212:                     TXSTAbits.TX9 = 0;
+[e = . . _TXSTAbits 0 6 -> -> 0 `i `uc ]
+"213
+[; ;main.c: 213:                     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"214
+[; ;main.c: 214:                     TXSTAbits.SYNC = 0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"215
+[; ;main.c: 215:                     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"216
+[; ;main.c: 216:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
 "217
-[; ;newmain.c: 217:                         }
-}
-[e :U 440 ]
+[; ;main.c: 217:                     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
 "218
-[; ;newmain.c: 218:                     }
-}
-[e :U 427 ]
-"185
-[; ;newmain.c: 185:                     while (contador == 4) {
-[e $ == _contador -> 4 `i 428  ]
-[e :U 429 ]
+[; ;main.c: 218:                     SPBRG = (unsigned char) (((8000000 / 9600) / 64) - 1);
+[e = _SPBRG -> - / / -> 8000000 `l -> -> 9600 `i `l -> -> 64 `i `l -> -> 1 `i `l `uc ]
 "219
-[; ;newmain.c: 219:                 } else {
-}
-[e $U 447  ]
-[e :U 426 ]
+[; ;main.c: 219:                     while (contador == 4) {
+[e $U 476  ]
+[e :U 477 ]
 {
 "220
-[; ;newmain.c: 220:                     aux_contrasenia[4] = 0;
-[e = *U + &U _aux_contrasenia * -> -> -> 4 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> -> 0 `i `uc ]
+[; ;main.c: 220:                         temperatura = (getCad(0)*0.02 * 100);
+[e = _temperatura -> * * -> -> ( _getCad (1 -> -> 0 `i `uc `i `d .0.02 -> -> 100 `i `d `f ]
 "221
-[; ;newmain.c: 221:                     retardo = atoi(aux_contrasenia);
-[e = _retardo -> ( _atoi (1 -> &U _aux_contrasenia `*Cuc `ui ]
+[; ;main.c: 221:                         sprintf(Temperatura, "%d%cC", (int) temperatura);
+[e ( _sprintf (1 , (. , &U _Temperatura :s 8C -> _temperatura `i ]
 "222
-[; ;newmain.c: 222:                     estado_teclado = n1;
-[e = _estado_teclado -> . `E3762 0 `uc ]
+[; ;main.c: 222:                         Lcd_Set_Cursor(1, 15);
+[e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 15 `i `uc ]
 "223
-[; ;newmain.c: 223:                     Lcd_Set_Cursor(2, 1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 223:                         Lcd_Write_String(Temperatura);
+[e ( _Lcd_Write_String (1 &U _Temperatura ]
 "224
-[; ;newmain.c: 224:                     Lcd_Write_String("contraseña invalida");
-[e ( _Lcd_Write_String (1 :s 6C ]
-"225
-[; ;newmain.c: 225:                     _delay((unsigned long)((600)*(8000000/4000.0)));
-[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-"226
-[; ;newmain.c: 226:                 }
-}
-[e :U 447 ]
-"227
-[; ;newmain.c: 227:             }
-}
-[e :U 421 ]
-[e :U 420 ]
+[; ;main.c: 224:                         if (temperatura > 30) {
+[e $ ! > _temperatura -> -> 30 `i `f 479  ]
+{
 "228
-[; ;newmain.c: 228:             break;
-[e $U 408  ]
+[; ;main.c: 228:                             if (hour >= 6 && hour <=18) {
+[e $ ! && >= _hour -> 6 `i <= _hour -> 18 `i 480  ]
+{
 "229
-[; ;newmain.c: 229:     }
-}
-[e $U 408  ]
-[e :U 409 ]
-[e [\ -> _estado_teclado `i , $ . `E3762 0 410
- , $ . `E3762 1 412
- , $ . `E3762 2 414
- , $ . `E3762 3 416
- , $ . `E3762 4 418
- 408 ]
-[e :U 408 ]
+[; ;main.c: 229:                                 PORTAbits.RA2 = 0;
+[e = . . _PORTAbits 0 2 -> -> 0 `i `uc ]
 "230
-[; ;newmain.c: 230: }
-[e :UE 407 ]
+[; ;main.c: 230:                             } else {
 }
+[e $U 481  ]
+[e :U 480 ]
+{
+"231
+[; ;main.c: 231:                                 PORTAbits.RA2 = 1;
+[e = . . _PORTAbits 0 2 -> -> 1 `i `uc ]
 "232
-[; ;newmain.c: 232: void securityHouse(signed int valor) {
+[; ;main.c: 232:                             }
+}
+[e :U 481 ]
+"234
+[; ;main.c: 234:                             for (int i = 0; i < 18; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 18 `i 482  ]
+[e $U 483  ]
+[e :U 482 ]
+{
+"236
+[; ;main.c: 236:                                 while (!TXSTAbits.TRMT) {
+[e $U 485  ]
+[e :U 486 ]
+{
+"237
+[; ;main.c: 237:                                 }
+}
+[e :U 485 ]
+"236
+[; ;main.c: 236:                                 while (!TXSTAbits.TRMT) {
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 486  ]
+[e :U 487 ]
+"239
+[; ;main.c: 239:                                 TXREG = buffer_TX[i];
+[e = _TXREG -> *U + &U _buffer_TX * -> -> _i `ui `ux -> -> # *U &U _buffer_TX `ui `ux `uc ]
+"240
+[; ;main.c: 240:                             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 18 `i 482  ]
+[e :U 483 ]
+}
+"241
+[; ;main.c: 241:                             PORTAbits.RA3 = 1;
+[e = . . _PORTAbits 0 3 -> -> 1 `i `uc ]
+"242
+[; ;main.c: 242:                         } else {
+}
+[e $U 488  ]
+[e :U 479 ]
+{
+"244
+[; ;main.c: 244:                             for (int i = 0; i < 21; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 21 `i 489  ]
+[e $U 490  ]
+[e :U 489 ]
+{
+"246
+[; ;main.c: 246:                                 while (!TXSTAbits.TRMT) {
+[e $U 492  ]
+[e :U 493 ]
+{
+"247
+[; ;main.c: 247:                                 }
+}
+[e :U 492 ]
+"246
+[; ;main.c: 246:                                 while (!TXSTAbits.TRMT) {
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 493  ]
+[e :U 494 ]
+"249
+[; ;main.c: 249:                                 TXREG = buffer_TX2[i];
+[e = _TXREG -> *U + &U _buffer_TX2 * -> -> _i `ui `ux -> -> # *U &U _buffer_TX2 `ui `ux `uc ]
+"250
+[; ;main.c: 250:                             }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 21 `i 489  ]
+[e :U 490 ]
+}
+"251
+[; ;main.c: 251:                             PORTAbits.RA3 = 0;
+[e = . . _PORTAbits 0 3 -> -> 0 `i `uc ]
+"252
+[; ;main.c: 252:                         }
+}
+[e :U 488 ]
+"253
+[; ;main.c: 253:                     }
+}
+[e :U 476 ]
+"219
+[; ;main.c: 219:                     while (contador == 4) {
+[e $ == _contador -> 4 `i 477  ]
+[e :U 478 ]
+"254
+[; ;main.c: 254:                 } else {
+}
+[e $U 495  ]
+[e :U 475 ]
+{
+"255
+[; ;main.c: 255:                     aux_contrasenia[4] = 0;
+[e = *U + &U _aux_contrasenia * -> -> -> 4 `i `ui `ux -> -> # *U &U _aux_contrasenia `ui `ux -> -> 0 `i `uc ]
+"256
+[; ;main.c: 256:                     retardo = atoi(aux_contrasenia);
+[e = _retardo -> ( _atoi (1 -> &U _aux_contrasenia `*Cuc `ui ]
+"257
+[; ;main.c: 257:                     estado_teclado = n1;
+[e = _estado_teclado -> . `E3781 0 `uc ]
+"258
+[; ;main.c: 258:                     Lcd_Set_Cursor(2, 1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"259
+[; ;main.c: 259:                     Lcd_Write_String("contraseña invalida");
+[e ( _Lcd_Write_String (1 :s 9C ]
+"260
+[; ;main.c: 260:                     _delay((unsigned long)((600)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 600 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"261
+[; ;main.c: 261:                 }
+}
+[e :U 495 ]
+"262
+[; ;main.c: 262:             }
+}
+[e :U 470 ]
+[e :U 469 ]
+"263
+[; ;main.c: 263:             break;
+[e $U 457  ]
+"264
+[; ;main.c: 264:     }
+}
+[e $U 457  ]
+[e :U 458 ]
+[e [\ -> _estado_teclado `i , $ . `E3781 0 459
+ , $ . `E3781 1 461
+ , $ . `E3781 2 463
+ , $ . `E3781 3 465
+ , $ . `E3781 4 467
+ 457 ]
+[e :U 457 ]
+"265
+[; ;main.c: 265: }
+[e :UE 456 ]
+}
+"267
+[; ;main.c: 267: void securityHouse(signed int valor) {
 [v _securityHouse `(v ~T0 @X0 1 ef1`i ]
 {
 [e :U _securityHouse ]
 [v _valor `i ~T0 @X0 1 r1 ]
 [f ]
-"233
-[; ;newmain.c: 233:     while (valor > 0) {
-[e $U 449  ]
-[e :U 450 ]
+"268
+[; ;main.c: 268:     while (valor > 0) {
+[e $U 497  ]
+[e :U 498 ]
 {
-"234
-[; ;newmain.c: 234:         _delay((unsigned long)((700)*(8000000/4000000.0)));
+"269
+[; ;main.c: 269:         _delay((unsigned long)((700)*(8000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 700 `i `d / -> -> 8000000 `l `d .4000000.0 `ul ]
-"235
-[; ;newmain.c: 235:         activar_seguridad();
+"270
+[; ;main.c: 270:         activar_seguridad();
 [e ( _activar_seguridad ..  ]
-"236
-[; ;newmain.c: 236:         valor--;
+"271
+[; ;main.c: 271:         valor--;
 [e -- _valor -> 1 `i ]
-"237
-[; ;newmain.c: 237:     }
+"272
+[; ;main.c: 272:     }
 }
-[e :U 449 ]
-"233
-[; ;newmain.c: 233:     while (valor > 0) {
-[e $ > _valor -> 0 `i 450  ]
-[e :U 451 ]
-"238
-[; ;newmain.c: 238: }
-[e :UE 448 ]
+[e :U 497 ]
+"268
+[; ;main.c: 268:     while (valor > 0) {
+[e $ > _valor -> 0 `i 498  ]
+[e :U 499 ]
+"273
+[; ;main.c: 273: }
+[e :UE 496 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"240
-[; ;newmain.c: 240: void main(void) {
+"275
+[; ;main.c: 275: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"241
-[; ;newmain.c: 241:     TRISB = 0;
+"276
+[; ;main.c: 276:     TRISB = 0;
 [e = _TRISB -> -> 0 `i `uc ]
-"242
-[; ;newmain.c: 242:     ADCON1 = 0b00001111;
+"277
+[; ;main.c: 277:     ADCON1 = 0b00001111;
 [e = _ADCON1 -> -> 15 `i `uc ]
-"243
-[; ;newmain.c: 243:     Keypad_Init();
+"278
+[; ;main.c: 278:     Keypad_Init();
 [e ( _Keypad_Init ..  ]
-"244
-[; ;newmain.c: 244:     Lcd_Init();
+"279
+[; ;main.c: 279:     Lcd_Init();
 [e ( _Lcd_Init ..  ]
-"245
-[; ;newmain.c: 245:     Lcd_Clear();
+"280
+[; ;main.c: 280:     Lcd_Clear();
 [e ( _Lcd_Clear ..  ]
-"246
-[; ;newmain.c: 246:     Lcd_Set_Cursor(1, 6);
+"281
+[; ;main.c: 281:     Lcd_Set_Cursor(1, 6);
 [e ( _Lcd_Set_Cursor (2 , -> -> 1 `i `uc -> -> 6 `i `uc ]
-"247
-[; ;newmain.c: 247:     Lcd_Write_String("TECLADO");
-[e ( _Lcd_Write_String (1 :s 7C ]
-"248
-[; ;newmain.c: 248:     while (1) {
-[e :U 454 ]
+"282
+[; ;main.c: 282:     Lcd_Write_String("TECLADO");
+[e ( _Lcd_Write_String (1 :s 10C ]
+"283
+[; ;main.c: 283:     while (1) {
+[e :U 502 ]
 {
-"249
-[; ;newmain.c: 249:         securityHouse(retardo);
+"284
+[; ;main.c: 284:         securityHouse(retardo);
 [e ( _securityHouse (1 -> _retardo `i ]
-"250
-[; ;newmain.c: 250:     }
+"285
+[; ;main.c: 285:     }
 }
-[e :U 453 ]
-[e $U 454  ]
-[e :U 455 ]
-"251
-[; ;newmain.c: 251: }
-[e :UE 452 ]
+[e :U 501 ]
+[e $U 502  ]
+[e :U 503 ]
+"286
+[; ;main.c: 286: }
+[e :UE 500 ]
 }
-[p f _sprintf 8913024 ]
+[p f _sprintf 13107328 ]
 [a 3C 99 111 110 116 114 97 115 101 18446744073709551601 97 32 99 111 114 114 101 99 116 97 0 ]
-[a 6C 99 111 110 116 114 97 115 101 18446744073709551601 97 32 105 110 118 97 108 105 100 97 0 ]
-[a 7C 84 69 67 76 65 68 79 0 ]
-[a 5C 37 100 37 99 67 0 ]
-[a 4C 84 69 77 80 69 82 65 84 85 82 65 0 ]
+[a 9C 99 111 110 116 114 97 115 101 18446744073709551601 97 32 105 110 118 97 108 105 100 97 0 ]
+[a 10C 84 69 67 76 65 68 79 0 ]
+[a 8C 37 100 37 99 67 0 ]
+[a 7C 72 111 114 97 58 37 120 58 0 ]
+[a 6C 37 120 58 0 ]
+[a 4C 84 101 109 112 101 114 97 116 117 114 97 58 0 ]
+[a 5C 37 120 32 0 ]
 [a 1C 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 0 ]
 [a 2C 32 32 32 32 32 32 0 ]

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\test.X.production.hex">
+  <executable name="dist/default/production\ARQB-ProyectoFinal.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>32768</length>
-      <used>8208</used>
-      <free>24560</free>
+      <used>10084</used>
+      <free>22684</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>2048</length>
-      <used>236</used>
-      <free>1812</free>
+      <used>285</used>
+      <free>1763</free>
     </memory>
   </executable>
 </project>

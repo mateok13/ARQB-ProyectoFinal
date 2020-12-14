@@ -16,6 +16,8 @@
 #include <xc.h>
 #include "pic18f4550.h"
 #define _XTAL_FREQ 8000000
+#define device_id_write 0xD0
+#define device_id_read 0xD1
 #include "lcd.h"
 #include "I2C_Master_File.h"
 #include <string.h>
@@ -29,9 +31,11 @@ char contrasenia[4] = {'2', '0', '2', '0'}; //contraseña definida para activar l
 unsigned int retardo = 100; //retardo en la lectura del teclado
 char buffer_TX[] = "temperatura alta\r";
 char buffer_TX2[] = "temperatura regular\r";
+int sec, min, hour;
 char estado_dia = 'N'; //este valida que tiempo es, si es de dia o es de noche
 
 //estado del teclado n1,n2,n3,n4 son los digitos que conforman la contraseña
+
 enum teclado_estado {
     n1, n2, n3, n4, en
 };
@@ -42,6 +46,7 @@ int contador = 0;
 //configuracion analogica del sensor termico
 //este metodo lo consegui en internet para hacer la conversion analogica del sensor
 //ya que este se conecta a una entrada analogica
+
 short getCad(char canal) {
     ADCON1 = 0b00001100;
     switch (canal) {
@@ -55,11 +60,24 @@ short getCad(char canal) {
 
     return ADRESH;
 }
+
+void RTC_Read_Clock(char read_clock_address) {
+    I2C_Start(device_id_write);
+    I2C_Write(read_clock_address); /* address from where time needs to be read*/
+    I2C_Repeated_Start(device_id_read);
+    sec = I2C_Read(0); /*read data and send ack for continuous reading*/
+    min = I2C_Read(0); /*read data and send ack for continuous reading*/
+    hour = I2C_Read(1); /*read data and send nack for indicating stop reading*/
+
+}
+
 //inicializacion del teclado
+
 void Keypad_Init() {
     TRISD = 0B00001111; //inica el puerto del teclado
 }
 //metodo para capturar las teclas que se presionen del teclado
+
 unsigned char Keypad_Key_Press(void) {
     const unsigned char keypad_deco[17] = {'7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', 13, '0', '=', '+', 0};
     unsigned int tec = 0, fila;
@@ -79,6 +97,7 @@ unsigned char Keypad_Key_Press(void) {
     return keypad_deco[tec]; //retorna el codigo deseado de la tecla
 }
 //lectura del teclado,se captura y valida 1 por 1 las teclas presionadas
+
 void activar_seguridad() {
     tecla = Keypad_Key_Press(); //se captura la tecla presionada
     //configuracion pines de los leds y el sensor
@@ -168,8 +187,24 @@ void activar_seguridad() {
                     char Temperatura[10];
                     Lcd_Clear();
                     TRISA = 0b00000001;
-                    Lcd_Set_Cursor(1, 6);
-                    Lcd_Write_String("TEMPERATURA");
+                    Lcd_Set_Cursor(1, 3);
+                    Lcd_Write_String("Temperatura:");
+                    char secs[10], mins[10], hours[10];
+                    I2C_Init();
+                    __delay_ms(10);
+                    RTC_Read_Clock(0); /*gives second,minute and hour*/
+                    I2C_Stop();
+                    __delay_ms(1000);
+                    //hour = hour & (0x3f);
+                    sprintf(secs, "%x ", sec); /*%x for reading BCD format from RTC DS1307*/
+                    sprintf(mins, "%x:", min);
+                    sprintf(hours, "Hora:%x:", hour);
+                    Lcd_Set_Cursor(2, 3);
+                    Lcd_Write_String(hours);
+                    Lcd_Set_Cursor(2, 11);
+                    Lcd_Write_String(mins);
+                    Lcd_Set_Cursor(2, 14);
+                    Lcd_Write_String(secs);
                     PORTAbits.RA5 = 1; //led seguridad activada led rojo
                     PORTAbits.RA4 = 0; //led seguridad desactivada led verde
                     //Configura UART a 9600 baudios
@@ -181,18 +216,18 @@ void activar_seguridad() {
                     BAUDCONbits.BRG16 = 0; //  Baudios modo-8bits.
                     RCSTAbits.SPEN = 1; //  Hbilita el Módulo SSP como UART.
                     SPBRG = (unsigned char) (((_XTAL_FREQ / 9600) / 64) - 1); //baudios  = 9600
-                    
                     while (contador == 4) {
                         temperatura = (getCad(0)*0.02 * 100); //conversion de la temperatura leida del sensor
                         sprintf(Temperatura, "%d%cC", (int) temperatura);
-                        Lcd_Set_Cursor(2, 6);
+                        Lcd_Set_Cursor(1, 15);
                         Lcd_Write_String(Temperatura);
-                        
                         if (temperatura > 30) {
                             //valida si es de dia o de noche D para dia, N para noche
-                            if (estado_dia == 'D') {
+                            //rango noche hour <= 5 && hour >= 0 || hour >= 19 && hour <= 23
+                            //rango dia hour >= 6 && hour <=18
+                            if (hour >= 6 && hour <=18) {
                                 PORTAbits.RA2 = 0;
-                            } else if (estado_dia = 'N') {
+                            } else {
                                 PORTAbits.RA2 = 1;
                             }
                             //registro de la temperatura en la consola

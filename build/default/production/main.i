@@ -1,4 +1,4 @@
-# 1 "newmain.c"
+# 1 "main.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "newmain.c" 2
-# 16 "newmain.c"
+# 1 "main.c" 2
+# 16 "main.c"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -5624,7 +5624,9 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\xc.h" 2 3
-# 16 "newmain.c" 2
+# 16 "main.c" 2
+
+
 
 
 
@@ -5743,7 +5745,7 @@ void Lcd_Shift_Left()
  Lcd_Cmd(0x01);
  Lcd_Cmd(0x08);
 }
-# 19 "newmain.c" 2
+# 21 "main.c" 2
 
 # 1 "./I2C_Master_File.h" 1
 # 19 "./I2C_Master_File.h"
@@ -5758,7 +5760,120 @@ char I2C_Write(unsigned char);
 void I2C_Ack();
 void I2C_Nack();
 char I2C_Read(char flag);
-# 20 "newmain.c" 2
+
+char I2C_Read(char flag)
+
+{
+        char buffer;
+        RCEN = 1;
+        while(!SSPSTATbits.BF);
+
+        buffer = SSPBUF;
+
+        if(flag==0)
+            I2C_Ack();
+        else
+            I2C_Nack();
+        I2C_Ready();
+        return(buffer);
+}
+
+void I2C_Init()
+{
+    TRISB0=1;
+ TRISB1=1;
+ SSPSTAT=80;
+    SSPCON1=0x28;
+
+ SSPCON2=0;
+    SSPADD=((8000000/(4*100000))-1);
+    SSPIE=1;
+    SSPIF=0;
+}
+
+
+void I2C_Ready()
+{
+    while(!SSPIF);
+    SSPIF=0;
+}
+
+void I2C_Start_Wait(char slave_write_address)
+{
+  while(1)
+  {
+    SSPCON2bits.SEN=1;
+    while(SSPCON2bits.SEN);
+    SSPIF=0;
+ if(!SSPSTATbits.S)
+        continue;
+    I2C_Write(slave_write_address);
+    if(ACKSTAT)
+    {
+        I2C_Stop();
+        continue;
+    }
+    break;
+  }
+}
+
+char I2C_Start(char slave_write_address)
+{
+    SSPCON2bits.SEN=1;
+    while(SSPCON2bits.SEN);
+ SSPIF=0;
+    if(!SSPSTATbits.S)
+    return 0;
+    return (I2C_Write(slave_write_address));
+
+}
+
+char I2C_Repeated_Start(char slave_read_address)
+{
+    RSEN = 1;
+    while(RSEN);
+    SSPIF = 0;
+ if(!SSPSTATbits.S)
+    return 0;
+    I2C_Write(slave_read_address);
+    if (ACKSTAT)
+     return 1;
+    else
+     return 2;
+}
+
+char I2C_Stop()
+{
+    PEN = 1;
+    while(PEN);
+    if(!SSPSTATbits.P);
+    return 0;
+}
+
+char I2C_Write(unsigned char data)
+{
+      SSPBUF = data;
+      I2C_Ready();
+      if (ACKSTAT)
+        return 1;
+      else
+        return 2;
+}
+
+void I2C_Ack()
+{
+    ACKDT=0;
+ ACKEN=1;
+    while(ACKEN);
+}
+
+void I2C_Nack()
+{
+    ACKDT=1;
+ ACKEN=1;
+    while(ACKEN);
+}
+# 22 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 1 3
 # 25 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\string.h" 3
@@ -5815,7 +5930,7 @@ size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
 
 void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 21 "newmain.c" 2
+# 23 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\ctype.h" 1 3
 # 10 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\ctype.h" 3
@@ -5855,7 +5970,7 @@ int toupper_l(int, locale_t);
 
 int isascii(int);
 int toascii(int);
-# 22 "newmain.c" 2
+# 24 "main.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c99\\stdio.h" 3
@@ -5995,7 +6110,7 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 23 "newmain.c" 2
+# 25 "main.c" 2
 
 
 
@@ -6005,7 +6120,9 @@ char contrasenia[4] = {'2', '0', '2', '0'};
 unsigned int retardo = 100;
 char buffer_TX[] = "temperatura alta\r";
 char buffer_TX2[] = "temperatura regular\r";
+int sec, min, hour;
 char estado_dia = 'N';
+
 
 
 enum teclado_estado {
@@ -6015,6 +6132,7 @@ enum teclado_estado {
 char estado_teclado = n1;
 
 int contador = 0;
+
 
 
 
@@ -6032,9 +6150,22 @@ short getCad(char canal) {
     return ADRESH;
 }
 
+void RTC_Read_Clock(char read_clock_address) {
+    I2C_Start(0xD0);
+    I2C_Write(read_clock_address);
+    I2C_Repeated_Start(0xD1);
+    sec = I2C_Read(0);
+    min = I2C_Read(0);
+    hour = I2C_Read(1);
+
+}
+
+
+
 void Keypad_Init() {
     TRISD = 0B00001111;
 }
+
 
 unsigned char Keypad_Key_Press(void) {
     const unsigned char keypad_deco[17] = {'7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', 13, '0', '=', '+', 0};
@@ -6054,6 +6185,7 @@ unsigned char Keypad_Key_Press(void) {
     PORTD = 0x00;
     return keypad_deco[tec];
 }
+
 
 void activar_seguridad() {
     tecla = Keypad_Key_Press();
@@ -6144,8 +6276,24 @@ void activar_seguridad() {
                     char Temperatura[10];
                     Lcd_Clear();
                     TRISA = 0b00000001;
-                    Lcd_Set_Cursor(1, 6);
-                    Lcd_Write_String("TEMPERATURA");
+                    Lcd_Set_Cursor(1, 3);
+                    Lcd_Write_String("Temperatura:");
+                    char secs[10], mins[10], hours[10];
+                    I2C_Init();
+                    _delay((unsigned long)((10)*(8000000/4000.0)));
+                    RTC_Read_Clock(0);
+                    I2C_Stop();
+                    _delay((unsigned long)((1000)*(8000000/4000.0)));
+
+                    sprintf(secs, "%x ", sec);
+                    sprintf(mins, "%x:", min);
+                    sprintf(hours, "Hora:%x:", hour);
+                    Lcd_Set_Cursor(2, 3);
+                    Lcd_Write_String(hours);
+                    Lcd_Set_Cursor(2, 11);
+                    Lcd_Write_String(mins);
+                    Lcd_Set_Cursor(2, 14);
+                    Lcd_Write_String(secs);
                     PORTAbits.RA5 = 1;
                     PORTAbits.RA4 = 0;
 
@@ -6157,18 +6305,18 @@ void activar_seguridad() {
                     BAUDCONbits.BRG16 = 0;
                     RCSTAbits.SPEN = 1;
                     SPBRG = (unsigned char) (((8000000 / 9600) / 64) - 1);
-
                     while (contador == 4) {
                         temperatura = (getCad(0)*0.02 * 100);
                         sprintf(Temperatura, "%d%cC", (int) temperatura);
-                        Lcd_Set_Cursor(2, 6);
+                        Lcd_Set_Cursor(1, 15);
                         Lcd_Write_String(Temperatura);
-
                         if (temperatura > 30) {
 
-                            if (estado_dia == 'D') {
+
+
+                            if (hour >= 6 && hour <=18) {
                                 PORTAbits.RA2 = 0;
-                            } else if (estado_dia = 'N') {
+                            } else {
                                 PORTAbits.RA2 = 1;
                             }
 
