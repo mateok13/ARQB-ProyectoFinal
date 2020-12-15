@@ -6135,7 +6135,6 @@ int contador = 0;
 
 
 
-
 short getCad(char canal) {
     ADCON1 = 0b00001100;
     switch (canal) {
@@ -6146,6 +6145,8 @@ short getCad(char canal) {
     ADCON2 = 0b00101001;
     ADON = 1;
     GO_DONE = 1;
+    while (GO_DONE == 1);
+
 
     return ADRESH;
 }
@@ -6276,6 +6277,7 @@ void activar_seguridad() {
                     char Temperatura[10];
                     Lcd_Clear();
                     TRISA = 0b00000001;
+                    TRISC = 0b00000000;
                     Lcd_Set_Cursor(1, 3);
                     Lcd_Write_String("Temperatura:");
                     char secs[10], mins[10], hours[10];
@@ -6307,17 +6309,17 @@ void activar_seguridad() {
                     SPBRG = (unsigned char) (((8000000 / 9600) / 64) - 1);
                     while (contador == 4) {
                         temperatura = (getCad(0)*0.02 * 100);
-                        sprintf(Temperatura, "%d%cC", (int) temperatura);
+                        sprintf(Temperatura, "%.2f", temperatura);
                         Lcd_Set_Cursor(1, 15);
                         Lcd_Write_String(Temperatura);
                         if (temperatura > 30) {
 
 
 
-                            if (hour >= 6 && hour <=18) {
-                                PORTAbits.RA2 = 0;
+                            if (hour > 6 && hour < 0x18) {
+                                PORTCbits.RC0 = 0;
                             } else {
-                                PORTAbits.RA2 = 1;
+                                PORTCbits.RC0 = 1;
                             }
 
                             for (int i = 0; i < 18; i++) {
@@ -6338,7 +6340,9 @@ void activar_seguridad() {
                                 TXREG = buffer_TX2[i];
                             }
                             PORTAbits.RA3 = 0;
+                            PORTCbits.RC0 = 0;
                         }
+                        _delay((unsigned long)((1000)*(8000000/4000.0)));
                     }
                 } else {
                     aux_contrasenia[4] = 0;

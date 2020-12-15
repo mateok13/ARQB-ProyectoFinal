@@ -46,7 +46,6 @@ int contador = 0;
 //configuracion analogica del sensor termico
 //este metodo lo consegui en internet para hacer la conversion analogica del sensor
 //ya que este se conecta a una entrada analogica
-
 short getCad(char canal) {
     ADCON1 = 0b00001100;
     switch (canal) {
@@ -57,6 +56,8 @@ short getCad(char canal) {
     ADCON2 = 0b00101001;
     ADON = 1;
     GO_DONE = 1;
+    while (GO_DONE == 1);
+    
 
     return ADRESH;
 }
@@ -104,8 +105,8 @@ void activar_seguridad() {
     TRISA = 0b00000001;
     //leds
     PORTAbits.RA3 = 0; //buzzer alarma activada
-    PORTAbits.RA5 = 0; //led seguridad activada led verde
-    PORTAbits.RA4 = 1; //led seguridad desactivada led rojo
+    PORTAbits.RA5 = 0; //led seguridad activada led rojo
+    PORTAbits.RA4 = 1; //led seguridad desactivada led verde
     switch (estado_teclado) {
         case n1:
             if ((tecla != 0) && (isdigit(tecla))) {
@@ -187,6 +188,7 @@ void activar_seguridad() {
                     char Temperatura[10];
                     Lcd_Clear();
                     TRISA = 0b00000001;
+                    TRISC = 0b00000000;
                     Lcd_Set_Cursor(1, 3);
                     Lcd_Write_String("Temperatura:");
                     char secs[10], mins[10], hours[10];
@@ -218,17 +220,17 @@ void activar_seguridad() {
                     SPBRG = (unsigned char) (((_XTAL_FREQ / 9600) / 64) - 1); //baudios  = 9600
                     while (contador == 4) {
                         temperatura = (getCad(0)*0.02 * 100); //conversion de la temperatura leida del sensor
-                        sprintf(Temperatura, "%d%cC", (int) temperatura);
+                        sprintf(Temperatura, "%.2f", temperatura);
                         Lcd_Set_Cursor(1, 15);
                         Lcd_Write_String(Temperatura);
                         if (temperatura > 30) {
                             //valida si es de dia o de noche D para dia, N para noche
                             //rango noche hour <= 5 && hour >= 0 || hour >= 19 && hour <= 23
                             //rango dia hour >= 6 && hour <=18
-                            if (hour >= 6 && hour <=18) {
-                                PORTAbits.RA2 = 0;
+                            if (hour > 6 && hour < 0x18) {
+                                PORTCbits.RC0 = 0;
                             } else {
-                                PORTAbits.RA2 = 1;
+                                PORTCbits.RC0 = 1;
                             }
                             //registro de la temperatura en la consola
                             for (int i = 0; i < 18; i++) {
@@ -249,7 +251,9 @@ void activar_seguridad() {
                                 TXREG = buffer_TX2[i];
                             }
                             PORTAbits.RA3 = 0; //buzzer alarma activada
+                            PORTCbits.RC0 = 0;
                         }
+                        __delay_ms(1000);
                     }
                 } else {
                     aux_contrasenia[4] = 0; //final de cadena
